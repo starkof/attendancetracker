@@ -21,7 +21,7 @@
       xsi:noNamespaceSchemaLocation="reladomoruntime.xsd">
     <ConnectionManager className="com.gs.fw.common.mithra.test.ConnectionManagerForTests">
         <Property name="resourceName" value="testdb"/>
-<!--        <MithraObjectConfiguration cacheType="none" className="tracker.domain.ObjectSequence"/>-->
-<!--        <MithraObjectConfiguration cacheType="partial" className="tracker.domain.Person"/>-->
+<!--        <MithraObjectConfiguration cacheType="none" className="com.mithraobjectsobjects.ObjectSequence"/>-->
+<!--        <MithraObjectConfiguration cacheType="partial" className="com.mithraobjectsobjects.Person"/>-->
     </ConnectionManager>
 </MithraRuntime>

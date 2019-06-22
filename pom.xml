@@ -91,7 +91,7 @@
                         </configuration>
                     </execution>
                     <!--
-                        "generated-db" is added to resource because the tracker app AttendanceTracker
+                        "generated-db" is added to resource because the com app AttendanceTracker
                         loads generated ddl/idx files to initialize h2 db in memory.
                         No need to do this for typical production apps.
                     -->

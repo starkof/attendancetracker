@@ -3,7 +3,7 @@
 <MithraObject objectType="transactional"
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
-    <PackageName>tracker.domain</PackageName>
+    <PackageName>com.mithraobjects</PackageName>
     <ClassName>Gender</ClassName>
     <DefaultTable>GENDERS</DefaultTable>
 

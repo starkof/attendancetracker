@@ -1,15 +1,15 @@
 <MithraRuntime>
-    <ConnectionManager className="tracker.util.H2ConnectionManager">
-        <MithraObjectConfiguration className="tracker.domain.Person" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.LectureHall" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Major" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Course" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Student" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Faculty" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Department" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Gender" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.MaritalStatus" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.Nationality" cacheType="partial"/>
-        <MithraObjectConfiguration className="tracker.domain.ClassTimeSlot" cacheType="partial"/>
+    <ConnectionManager className="com.util.H2ConnectionManager">
+        <MithraObjectConfiguration className="com.mithraobjects.Person" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.LectureHall" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Major" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Course" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Student" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Faculty" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Department" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Gender" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.MaritalStatus" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.Nationality" cacheType="partial"/>
+        <MithraObjectConfiguration className="com.mithraobjects.ClassTimeSlot" cacheType="partial"/>
     </ConnectionManager>
 </MithraRuntime>

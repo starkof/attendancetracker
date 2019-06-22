@@ -1,0 +1,11 @@
+package com.mithraobjects;
+
+public class MaritalStatus extends MaritalStatusAbstract
+{
+	public MaritalStatus()
+	{
+		super();
+		// You must not modify this constructor. Mithra calls this internally.
+		// You can call this constructor. You can also add new constructors.
+	}
+}

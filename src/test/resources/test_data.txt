@@ -14,7 +14,7 @@
  under the License.
  */
 
-class tracker.domain.Person
+class com.mithraobjects.Person
 personId, firstName, lastName, country
 0       , "John",  "Smith", "USA"
 1       , "Taro",  "Tanaka", "JPN"
