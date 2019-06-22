@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>Major</ClassName>
+    <DefaultTable>MAJORS</DefaultTable>
+
+    <Attribute name="majorId" javaType="int" columnName="'MAJOR_ID" primaryKey="true"/>
+    <Attribute name="majorName" javaType="String" columnName="MAJOR_NAME"/>
+</MithraObject>

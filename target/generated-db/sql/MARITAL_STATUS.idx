@@ -1,0 +1,2 @@
+alter table MARITAL_STATUS add constraint MARITAL_STATUS_PK primary key (MARITAL_STATUS_ID);
+

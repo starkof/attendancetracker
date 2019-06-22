@@ -1,0 +1,8 @@
+alter table DEPARTMENTS add constraint DEPARTMENTS_PK primary key (DEPARTMENT_ID);
+
+drop index if exists DEPARTMENTS_IDX0;
+create index DEPARTMENTS_IDX0 on DEPARTMENTS(COURSE_ID);
+
+drop index if exists DEPARTMENTS_IDX1;
+create index DEPARTMENTS_IDX1 on DEPARTMENTS(MAJOR_ID);
+

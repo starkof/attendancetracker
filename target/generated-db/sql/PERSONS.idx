@@ -1,0 +1,11 @@
+alter table PERSONS add constraint PERSONS_PK primary key (PERSON_ID);
+
+drop index if exists PERSONS_IDX0;
+create index PERSONS_IDX0 on PERSONS(GENDER_ID);
+
+drop index if exists PERSONS_IDX1;
+create index PERSONS_IDX1 on PERSONS(MARITAL_STATUS_ID);
+
+drop index if exists PERSONS_IDX2;
+create index PERSONS_IDX2 on PERSONS(NATIONALITY_ID);
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Mithra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="reladomoobject.xsd"
+        enableOffHeap="false">
+    <MithraObjectResource name="Gender"/>
+    <MithraObjectResource name="Person"/>
+    <MithraObjectResource name="LectureHall"/>
+    <MithraObjectResource name="Major"/>
+    <MithraObjectResource name="Course"/>
+    <MithraObjectResource name="Student"/>
+    <MithraObjectResource name="Faculty"/>
+    <MithraObjectResource name="Department"/>
+    <MithraObjectResource name="MaritalStatus"/>
+    <MithraObjectResource name="Nationality"/>
+    <MithraObjectResource name="ClassTimeSlot"/>
+</Mithra>

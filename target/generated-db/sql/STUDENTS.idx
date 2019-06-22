@@ -1,0 +1,11 @@
+alter table STUDENTS add constraint STUDENTS_PK primary key (STUDENT_ID);
+
+drop index if exists STUDENTS_IDX0;
+create index STUDENTS_IDX0 on STUDENTS(MAJOR_ID);
+
+drop index if exists STUDENTS_IDX1;
+create index STUDENTS_IDX1 on STUDENTS(PERSON_ID);
+
+drop index if exists STUDENTS_IDX2;
+create index STUDENTS_IDX2 on STUDENTS(COURSE_ID);
+

@@ -1,0 +1,2 @@
+alter table LECTURE_HALLS add constraint LECTURE_HALLS_PK primary key (HALL_ID);
+

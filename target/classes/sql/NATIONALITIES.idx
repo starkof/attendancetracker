@@ -1,0 +1,2 @@
+alter table NATIONALITIES add constraint NATIONALITIES_PK primary key (NATIONALITY_ID);
+

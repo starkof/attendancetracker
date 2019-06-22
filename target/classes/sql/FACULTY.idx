@@ -1,0 +1,11 @@
+alter table FACULTY add constraint FACULTY_PK primary key (FACULTY_ID);
+
+drop index if exists FACULTY_IDX0;
+create index FACULTY_IDX0 on FACULTY(DEPARTMENT_ID);
+
+drop index if exists FACULTY_IDX1;
+create index FACULTY_IDX1 on FACULTY(COURSE_ID);
+
+drop index if exists FACULTY_IDX2;
+create index FACULTY_IDX2 on FACULTY(PERSON_ID);
+

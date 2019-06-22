@@ -1,0 +1,21 @@
+alter table PERSONS add constraint PERSONS_fk_0 foreign key (
+    GENDER_ID
+)
+references GENDERS(
+    GENDER_ID
+);
+
+alter table PERSONS add constraint PERSONS_fk_1 foreign key (
+    MARITAL_STATUS_ID
+)
+references MARITAL_STATUS(
+    MARITAL_STATUS_ID
+);
+
+alter table PERSONS add constraint PERSONS_fk_2 foreign key (
+    NATIONALITY_ID
+)
+references NATIONALITIES(
+    NATIONALITY_ID
+);
+

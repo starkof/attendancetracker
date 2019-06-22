@@ -1,0 +1,2 @@
+alter table CLASS_TIME_SLOTS add constraint CLASS_TIME_SLOTS_PK primary key (TIME_SLOT_ID);
+

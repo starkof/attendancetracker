@@ -1,0 +1,7 @@
+alter table MAJORS add constraint MAJORS_fk_0 foreign key (
+    'MAJOR_ID
+)
+references DEPARTMENTS(
+    MAJOR_ID
+);
+

@@ -1,0 +1,7 @@
+alter table STUDENTS add constraint STUDENTS_fk_0 foreign key (
+    MAJOR_ID
+)
+references MAJORS(
+    'MAJOR_ID
+);
+

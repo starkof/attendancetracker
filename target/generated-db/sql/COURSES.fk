@@ -1,0 +1,7 @@
+alter table COURSES add constraint COURSES_fk_0 foreign key (
+    COURSE_ID
+)
+references DEPARTMENTS(
+    COURSE_ID
+);
+

@@ -1,0 +1,2 @@
+alter table MAJORS add constraint MAJORS_PK primary key ('MAJOR_ID);
+

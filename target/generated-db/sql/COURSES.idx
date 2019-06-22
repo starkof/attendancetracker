@@ -1,0 +1,8 @@
+alter table COURSES add constraint COURSES_PK primary key (COURSE_ID);
+
+drop index if exists COURSES_IDX0;
+create index COURSES_IDX0 on COURSES(TIME_SLOT);
+
+drop index if exists COURSES_IDX1;
+create index COURSES_IDX1 on COURSES(LECTURE_HALL_ID);
+

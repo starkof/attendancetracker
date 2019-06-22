@@ -1,0 +1,2 @@
+alter table GENDERS add constraint GENDERS_PK primary key (GENDER_ID);
+

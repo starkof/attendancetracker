@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>Course</ClassName>
+    <DefaultTable>COURSES</DefaultTable>
+
+    <Attribute name="courseId" javaType="int" columnName="COURSE_ID" primaryKey="true"/>
+    <Attribute name="timeSlotId" javaType="int" columnName="TIME_SLOT"/>
+    <Attribute name="semester" javaType="String" columnName="SEMESTER"/>
+    <Attribute name="startDate" javaType="Date" columnName="START_DATE"/>
+    <Attribute name="endDate" javaType="Date" columnName="END_DATE"/>
+    <Attribute name="lectureHallId" javaType="int" columnName="LECTURE_HALL_ID"/>
+
+    <Relationship name="time" relatedObject="ClassTimeSlot" cardinality="many-to-many">
+        ClassTimeSlot.timeSlotId = this.timeSlotId
+    </Relationship>
+
+    <Relationship name="lectureHall" relatedObject="LectureHall" cardinality="many-to-many">
+        LectureHall.lectureHallId = this.lectureHallId
+    </Relationship>
+</MithraObject>
