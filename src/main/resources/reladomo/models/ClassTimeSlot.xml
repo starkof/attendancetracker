@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>ClassTimeSlot</ClassName>
+    <DefaultTable>CLASS_TIME_SLOTS</DefaultTable>
+    
+    <Attribute name="timeSlotId" javaType="int" columnName="TIME_SLOT_ID" primaryKey="true"/>
+    <Attribute name="startTime" javaType="Date" columnName="START_TIME"/>
+    <Attribute name="endTime" javaType="Date" columnName="END_TIME"/>
+    <!--  TODO: Consider linking to a table of days  -->
+    <Attribute name="day" javaType="String" columnName="DAY"/>
+</MithraObject>

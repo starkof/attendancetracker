@@ -1,0 +1,15 @@
+<MithraRuntime>
+    <ConnectionManager className="tracker.util.H2ConnectionManager">
+        <MithraObjectConfiguration className="tracker.domain.Person" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.LectureHall" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Major" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Course" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Student" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Faculty" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Department" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Gender" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.MaritalStatus" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.Nationality" cacheType="partial"/>
+        <MithraObjectConfiguration className="tracker.domain.ClassTimeSlot" cacheType="partial"/>
+    </ConnectionManager>
+</MithraRuntime>

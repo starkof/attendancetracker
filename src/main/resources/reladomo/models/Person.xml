@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>Person</ClassName>
+    <DefaultTable>PERSONS</DefaultTable>
+
+    <Attribute name="personId" javaType="int" columnName="PERSON_ID" primaryKey="true"/>
+    <Attribute name="firstName" javaType="String" columnName="FIRST_NAME"/>
+    <Attribute name="lastName" javaType="String" columnName="LAST_NAME"/>
+    <Attribute name="otherNames" javaType="String" columnName="OTHER_NAMES"/>
+    <Attribute name="age" javaType="int" columnName="AGE"/>
+    <Attribute name="genderId" javaType="int" columnName="GENDER_ID"/>
+    <Attribute name="maritalStatusId" javaType="int" columnName="MARITAL_STATUS_ID"/>
+    <Attribute name="nationalityId" javaType="int" columnName="NATIONALITY_ID"/>
+
+    <Relationship name="gender" relatedObject="Gender" cardinality="many-to-one" reverseRelationshipName="people">
+        Gender.genderId = this.genderId
+    </Relationship>
+
+    <Relationship name="maritalStatus" relatedObject="MaritalStatus" cardinality="many-to-one" reverseRelationshipName="people">
+        MaritalStatus.maritalStatusId = this.maritalStatusId
+    </Relationship>
+
+    <Relationship name="nationality" relatedObject="Nationality" cardinality="many-to-one" reverseRelationshipName="people">
+        Nationality.nationalityId = this.nationalityId
+    </Relationship>
+</MithraObject>

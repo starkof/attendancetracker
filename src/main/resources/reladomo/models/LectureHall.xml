@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>LectureHall</ClassName>
+    <DefaultTable>LECTURE_HALLS</DefaultTable>
+
+    <Attribute name="lectureHallId" javaType="int" columnName="HALL_ID" primaryKey="true"/>
+    <Attribute name="hallName" javaType="String" columnName="HALL_NAME"/>
+    <Attribute name="capacity" javaType="int" columnName="CAPACITY"/>
+</MithraObject>

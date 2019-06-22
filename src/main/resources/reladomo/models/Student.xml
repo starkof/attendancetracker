@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>Student</ClassName>
+    <DefaultTable>STUDENTS</DefaultTable>
+
+    <Attribute name="studentId" javaType="int" columnName="STUDENT_ID" primaryKey="true"/>
+    <Attribute name="majorId" javaType="int" columnName="MAJOR_ID"/>
+    <Attribute name="gpa" javaType="int" columnName="GPA"/>
+    <Attribute name="admissionDate" javaType="Date" columnName="ADMISSION_DATE"/>
+    <Attribute name="expectedGraduation" javaType="Date" columnName="EXPECTED_GRADUATION"/>
+    <Attribute name="personId" javaType="int" columnName="PERSON_ID"/>
+    <Attribute name="courseId" javaType="int" columnName="COURSE_ID"/>
+
+    <Relationship name="major" relatedObject="Major" cardinality="many-to-one" reverseRelationshipName="students">
+        Major.majorId = this.majorId
+    </Relationship>
+
+    <Relationship name="person" relatedObject="Person" cardinality="one-to-one" reverseRelationshipName="student">
+        Person.personId = this.personId
+    </Relationship>
+
+    <Relationship name="courses" relatedObject="Course" cardinality="many-to-many" reverseRelationshipName="students">
+        Course.courseId = this.courseId
+    </Relationship>
+</MithraObject>

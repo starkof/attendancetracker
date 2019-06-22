@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<MithraObject objectType="transactional"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="reladomoobject.xsd">
+    <PackageName>tracker.domain</PackageName>
+    <ClassName>MaritalStatus</ClassName>
+    <DefaultTable>MARITAL_STATUS</DefaultTable>
+
+    <Attribute name="maritalStatusId" javaType="int" columnName="MARITAL_STATUS_ID" primaryKey="true"/>
+    <Attribute name="maritalStatusValue" javaType="String" columnName="MARITAL_STATUS_VALUE"/>
+</MithraObject>
